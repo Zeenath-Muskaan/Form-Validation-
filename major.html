@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATION FORM</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="code.js"></script>
+    <div class="container">
+
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <h1><i><b>User Name:</b></i></h1>
+            <input type="text" name="fname" class="user-input" required>            
+            <h2 id="fnameError" style="display: none; color: red;"></h2>
+        </form>
+        <form name="myEmail" onsubmit="return validateForm()">
+            <h1><i><b>Email-id:</b></i></h1>
+            <input type="email" name="email" class="user-input" required>
+            <h2 id="emailError" style="display: none; color: red;"></h2>
+        </form>
+        <form name="myPhone" onsubmit="return validateForm()" >
+            <h1><i><b>Phone Number:</b></i></h1>
+            <input type="tel" name="phone" class="user-input" required>
+            <h2 id="phoneError" style="display: none; color: red;"></h2>
+        </form>
+        <form name="myPassword" onsubmit="return validateForm()" >
+            <h1><i><b>Password:</b></i></h1>
+            <input type="password" name="password" class="user-input" required>
+            <h2 id="passwordError" style="display: none; color: red;"></h2>
+        </form>
+        <form name="confirmPwd" onsubmit="return validateForm()">
+            <h1><i><b>Confirm Password:</b></i></h1>
+            <input type="password" name="confirmPwd" class="user-input" required>
+            <h2 id="confirmPwdError" style="display: none; color: red;"></h2>
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+    </div>
+</body>
+</html>
